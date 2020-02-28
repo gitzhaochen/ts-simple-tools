@@ -2,7 +2,7 @@
 
 基于 rollup 打包 esm 格式，配合 sideEffects，利用 tree shaking 减少代码体积。
 
-> 由于 `webpack` 打包组件库有以下缺点：
+> 由于 `webpack` 打包输出有以下缺点：
 
 1. 不支持输出 esm 包（最大的缺点）,无法`tree shaking`
 2. 代码冗余，webpack 内置的模块化代码、vue-loader 内置的 normalize 函数、重复引入的 babel helper
