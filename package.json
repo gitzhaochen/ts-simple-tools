@@ -1,6 +1,6 @@
 {
-  "name": "@allen/tools",
-  "version": "1.0.1",
+  "name": "allen-tools",
+  "version": "1.0.2",
   "description": "",
   "module": "dist/esm/index.js",
   "main": "dist/umd/index.js",
