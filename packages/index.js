@@ -1,4 +1,4 @@
-import log from './log/index.js'
+import treelog from './treelog/index.js'
 import windowScaleTip from './windowScaleTip/index.js'
 
-export { windowScaleTip,log }
+export { windowScaleTip,treelog }
