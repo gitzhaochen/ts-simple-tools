@@ -4,11 +4,13 @@
 
 > 由于 `webpack` 打包输出有以下缺点：
 
-1. 不支持输出 esm 包（最大的缺点）,无法`tree shaking`
+1. 不支持输出 esm 包,无法`tree shaking`
 2. 代码冗余，webpack 内置的模块化代码、vue-loader 内置的 normalize 函数、重复引入的 babel helper
 3. 按需加载需要`babel-plugin-import`插件才能实现，不够优雅
 
 ## Usage
+
+> 安装：npm i -S @zg/tools
 
 1. esm：
 
@@ -30,13 +32,15 @@ ZgTools.windowScaleTip.init()
 let ZgTools = window['ZgTools']
 ZgTools.windowScaleTip.init()
 ```
+## Includes
+1. [浏览器缩放自动提示，支持关闭](./windowScaleTip/README.md)
 
 ## Todo
 
 1.  增加开发预览页面
 2.  支持 vue 组件
 
-## 开发与发布
+## Dev && Publish
 
 1. npm run dev
 2. npm run release
