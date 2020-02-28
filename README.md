@@ -33,7 +33,7 @@ let ZgTools = window['ZgTools']
 ZgTools.windowScaleTip.init()
 ```
 ## Includes
-1. [浏览器缩放自动提示，支持关闭](./windowScaleTip/README.md)
+1. [浏览器缩放自动提示，支持关闭](./packages/windowScaleTip/README.md)
 
 ## Todo
 
