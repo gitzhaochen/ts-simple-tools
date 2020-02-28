@@ -7,7 +7,11 @@ const config = [
     output: {
       file: pkg.main,
       format: 'umd',
-      name: 'ZgTools' //包输出的全局变量名称
+      name: 'ZgTools', //包输出的全局变量名称
+      globals: {
+        '@babel/runtime/helpers/esm/classCallCheck': '_classCallCheck',
+        '@babel/runtime/helpers/esm/createClass': '_createClass'
+      }
     }
   })
 ]
