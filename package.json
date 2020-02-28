@@ -1,0 +1,43 @@
+{
+  "name": "@allen/tools",
+  "version": "1.0.0",
+  "description": "",
+  "module": "dist/esm/index.js",
+  "main": "dist/umd/index.js",
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rm -rf dist/ && cross-env NODE_ENV=development rollup -c scripts/rollup.config.esm.js -w",
+    "build": "npm run build:esm && cross-env NODE_ENV=production npm run build:umd",
+    "build:esm": "rm -rf dist/esm/ && cross-env NODE_ENV=production rollup -c scripts/rollup.config.esm.js",
+    "build:umd": "rm -rf dist/umd/ && cross-env NODE_ENV=production rollup -c scripts/rollup.config.umd.js",
+    "publish": "cross-env && node scripts/release.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/runtime": "^7.8.4",
+    "@babel/runtime-corejs3": "^7.8.4",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "autoprefixer": "^9.7.4",
+    "core-js": "^3.6.4",
+    "cross-env": "^7.0.0",
+    "release-easy": "^1.2.1",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  },
+  "peerDependencies": {
+    "core-js": "^3.6.4",
+    "@babel/runtime-corejs3": "^7.8.4"
+  }
+}
