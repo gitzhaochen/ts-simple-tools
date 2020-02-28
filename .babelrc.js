@@ -14,7 +14,7 @@ const config = {
       '@babel/plugin-transform-runtime',
       {
         helpers: true,
-        // corejs: 3,
+        corejs: false, //使用core-js
         regenerator: false,
         useESModules: true
       }

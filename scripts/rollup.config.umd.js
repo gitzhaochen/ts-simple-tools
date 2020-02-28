@@ -7,7 +7,7 @@ const config = [
     output: {
       file: pkg.main,
       format: 'umd',
-      name: pkg.name //包输出的全局变量名称
+      name: 'ZgTools' //包输出的全局变量名称
     }
   })
 ]

@@ -1,3 +1,4 @@
-export default ()=>{
-  console.log('aoligei!!!!!!')
+export default (a, b) => {
+  let test = 'aoligei'
+  console.log(test + a + b)
 }
