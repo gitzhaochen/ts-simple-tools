@@ -14,7 +14,7 @@
 ## Usage
 
 > 安装：npm i -S @zg/tools
-> 按需加载需要借助`babel-plugin-component`插件才能实现
+> 按需加载：需要借助`babel-plugin-component`插件才能实现
 
 ```js
 //.babelrc 配置
@@ -54,10 +54,11 @@ let ZgTools = window['ZgTools']
 ZgTools.windowScaleTip.init()
 ```
 
-##Features
+## Features
 
 1. 支持 Vue 组件
-2. packages 目录文件单独打包
+2. babel 7
+3. packages 目录文件单独打包
 
 ## Todo
 
