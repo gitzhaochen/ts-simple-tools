@@ -1,22 +1,22 @@
 const config = {
   presets: [
     [
-      '@babel/env',
+      '@babel/preset-env',
       {
         useBuiltIns: 'usage',
         corejs: 3,
         modules: false
       }
-    ]
+    ],
+    ['@babel/preset-typescript']
   ],
   plugins: [
     [
       '@babel/plugin-transform-runtime',
       {
         helpers: true,
-        corejs: false, //使用core-js
-        regenerator: false,
-        useESModules: true
+        corejs: false,
+        regenerator: false
       }
     ]
   ]

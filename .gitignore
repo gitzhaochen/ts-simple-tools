@@ -5,9 +5,9 @@ yarn-debug.log*
 yarn-error.log*
 /dist
 .idea
-.vscode
 .vs
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
+.eslintcache
