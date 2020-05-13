@@ -22,7 +22,8 @@ export default {
       name: 'ZgTools',
       globals: {
         '@babel/runtime/helpers/classCallCheck': '_classCallCheck',
-        '@babel/runtime/helpers/createClass': '_createClass'
+        '@babel/runtime/helpers/createClass': '_createClass',
+        'number-precision': 'NP'
       }
     }
   ],
@@ -35,6 +36,6 @@ export default {
   ],
   external(id) {
     // 对babel-runtime corejs等进行external
-    return /^@babel|core-js/.test(id) || id === 'vue'
+    return /^@babel|core-js|number-precision/.test(id)
   }
 }

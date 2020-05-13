@@ -1,8 +1,7 @@
-import { InitOption } from '../../types/index'
+import { InitOption } from '../../types/windowScaleTip'
 /**
  * 获取浏览器缩放的倍数
  */
-
 function detectZoom(): number {
   let ratio = 0
   const screen = window.screen,
@@ -21,7 +20,7 @@ function detectZoom(): number {
 }
 
 class WinScaleTip {
-  private options = {
+  private options: InitOption = {
     alwaysShow: false, //是否一直展示
     style: {
       position: 'relative',
