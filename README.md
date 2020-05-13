@@ -14,24 +14,6 @@
 ## Usage
 
 > 安装：npm i -S @zg/tools
-> 按需加载：需要借助`babel-plugin-component`插件才能实现
-
-```js
-//.babelrc 配置
-module.exports = {
-  plugins: [
-    [
-      'component',
-      {
-        libraryName: '@zg/tools',
-        libDir: 'dist/esm',
-        style: false,
-        camel2Dash: false
-      }
-    ]
-  ]
-}
-```
 
 1. esm：
 
@@ -53,12 +35,6 @@ ZgTools.windowScaleTip.init()
 let ZgTools = window['ZgTools']
 ZgTools.windowScaleTip.init()
 ```
-
-## Features
-
-1. 支持 Vue 组件
-2. babel 7
-3. packages 目录文件单独打包
 
 ## Todo
 

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "ES6",
+    "lib": ["es6", "es7", "dom", "ES2017.object"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "moduleResolution": "node"
+  },
+  "exclude": ["node_modules"]
+}
