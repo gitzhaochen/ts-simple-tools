@@ -1,9 +1,10 @@
 {
   "name": "@zg/tools",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "基建工具一些通用处理函数等",
   "module": "dist/esm/index.js",
   "main": "dist/umd/index.js",
+  "types": "types/index.d.ts",
   "sideEffects": false,
   "files": [
     "dist",
