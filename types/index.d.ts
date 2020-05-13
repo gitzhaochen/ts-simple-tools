@@ -1,11 +1,8 @@
-declare global {
-  interface Screen {
-    deviceXDPI: number
-    logicalXDPI: number
-  }
+import { InitOption } from './windowScaleTip'
+export interface WindowScaleTip {
+  render(): void
+  init(options: InitOption): void
 }
-export interface InitOption {
-  style?: object
-  noTipBtnStyle?: object
-  alwaysShow?: boolean
+export interface FormatPermil {
+  (money: string | number, division: number): string
 }

@@ -1,11 +1,14 @@
+import { FormatPermil } from '../../types/index'
+
 import NP from 'number-precision'
 NP.enableBoundaryChecking(false)
 /**
  *
  * @param money 要格式化的金额 单位:分
  * @param division 除数 默认：100 （分=>元）
+ * @returns 格式化后的金额 string
  */
-export default function formatPermil(money: string | number, division = 100): string {
+const formatPermil: FormatPermil = function (money, division = 100) {
   if (typeof money === 'string') {
     money = parseFloat(money)
     if (isNaN(money)) {
@@ -25,3 +28,4 @@ export default function formatPermil(money: string | number, division = 100): st
   }
   return '--'
 }
+export default formatPermil

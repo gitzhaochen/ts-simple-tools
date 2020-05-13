@@ -1,4 +1,5 @@
-import { InitOption } from '../../types/index'
+import { WindowScaleTip } from '../../types/index'
+import { InitOption } from '../../types/windowScaleTip'
 /**
  * 获取浏览器缩放的倍数
  */
@@ -19,7 +20,7 @@ function detectZoom(): number {
   return ratio
 }
 
-class WinScaleTip {
+class WinScaleTip implements WindowScaleTip {
   private options: InitOption = {
     alwaysShow: false, //是否一直展示
     style: {
