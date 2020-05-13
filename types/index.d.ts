@@ -4,9 +4,8 @@ declare global {
     logicalXDPI: number
   }
 }
-interface InitOption {
+export interface InitOption {
   style?: object
   noTipBtnStyle?: object
   alwaysShow?: boolean
 }
-export { InitOption }

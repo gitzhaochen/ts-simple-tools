@@ -18,7 +18,7 @@ export default {
     },
     {
       file: pkg.main,
-      format: 'umd',
+      format: 'iife',
       name: 'ZgTools',
       globals: {
         '@babel/runtime/helpers/classCallCheck': '_classCallCheck',

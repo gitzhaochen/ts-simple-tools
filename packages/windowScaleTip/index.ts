@@ -1,4 +1,4 @@
-import { InitOption } from '../../types/windowScaleTip'
+import { InitOption } from '../../types/index'
 /**
  * 获取浏览器缩放的倍数
  */
