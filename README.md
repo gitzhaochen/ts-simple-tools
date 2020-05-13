@@ -36,12 +36,6 @@ let ZgTools = window['ZgTools']
 ZgTools.windowScaleTip.init()
 ```
 
-## Features
-
-1. 支持 Vue 组件
-2. babel 7
-3. packages 目录文件单独打包
-
 ## Todo
 
 1.  增加开发预览页面

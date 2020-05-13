@@ -7,7 +7,7 @@ function detectZoom(): number {
   let ratio = 0
   const screen = window.screen,
     ua = navigator.userAgent.toLowerCase()
-  if (ua.indexOf('msie')) {
+  if (ua.indexOf('msie') !== -1) {
     if (screen.deviceXDPI && screen.logicalXDPI) {
       ratio = screen.deviceXDPI / screen.logicalXDPI
     }
@@ -34,9 +34,10 @@ class WinScaleTip implements WindowScaleTip {
     },
     noTipBtnStyle: { cursor: 'pointer', color: '#007acc' } //不在提示按钮
   }
-  private type = detectZoom() > 100 ? '放大' : '缩放'
+  private ratio = detectZoom()
+  private type = this.ratio > 100 ? '放大' : '缩放'
 
-  render(): void {
+  private render(): void {
     const { style = {}, noTipBtnStyle = {} } = this.options
     const elem = document.createElement('div'),
       noTipElem = document.createElement('span') //不再提示按钮
@@ -60,6 +61,7 @@ class WinScaleTip implements WindowScaleTip {
   }
   init(options: InitOption): void {
     if (document.querySelector('#ZgWinScaleTip')) return
+    if (this.ratio === 0 || this.ratio === 100) return
     const { style = {}, noTipBtnStyle = {}, alwaysShow = false } = options || {}
     Object.assign(this.options.style, style)
     Object.assign(this.options.noTipBtnStyle, noTipBtnStyle)

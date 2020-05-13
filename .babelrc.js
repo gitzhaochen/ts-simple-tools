@@ -18,7 +18,9 @@ const config = {
         corejs: false,
         regenerator: false
       }
-    ]
+    ],
+    '@babel/plugin-proposal-nullish-coalescing-operator',
+    '@babel/plugin-proposal-optional-chaining'
   ]
 }
 module.exports = config
