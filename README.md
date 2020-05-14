@@ -1,15 +1,13 @@
 ## Intro
 
-基于 rollup 打包 esm 格式，配合 sideEffects，利用 tree shaking 减少代码体积。
+基建工具包，抽离一些通用处理函数等
 
-> 由于 `webpack` 打包输出有以下缺点：
-
-1. 不支持输出 esm 包,无法`tree shaking`
-2. 代码冗余，webpack 内置的模块化代码、vue-loader 内置的 normalize 函数、重复引入的 babel helper
+> 基于 `rollup` 打包 `esm` 格式，配合 `sideEffects`，使用方可以借用`webpack`等工具 利用`tree shaking`特性，从而减少代码体积。
 
 ## Includes
 
-1. [浏览器缩放自动提示，支持关闭](./packages/windowScaleTip/README.md)
+1. windowScaleTip：[浏览器缩放自动提示，支持关闭](./packages/windowScaleTip/README.md)
+2. formatPermil：[金额千分位格式化，支持分到元转化](./packages/formatPermil/README.md)
 
 ## Usage
 
@@ -49,4 +47,4 @@ ZgTools.windowScaleTip.init()
 
 1. npm link 添加本地 npm 包，link 到全局
 2. npm link @zg/tools 去项目目录通过包名来 link
-3. npm unlink my-utils 去掉 link
+3. npm unlink @zg/tools 去掉 link

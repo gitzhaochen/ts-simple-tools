@@ -25,7 +25,8 @@ module.exports = {
         trailingComma: 'none'
       }
     ],
-    '@typescript-eslint/explicit-function-return-type': 'off'
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-explicit-any': 'off'
   },
   overrides: [
     {
