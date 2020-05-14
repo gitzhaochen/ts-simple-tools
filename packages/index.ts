@@ -1,4 +1,4 @@
-import FormatPermil from './formatPermil/index'
-import WindowScaleTip from './windowScaleTip/index'
+import formatPermil from './formatPermil/index'
+import windowScaleTip from './windowScaleTip/index'
 
-export { FormatPermil, WindowScaleTip }
+export { formatPermil, windowScaleTip }

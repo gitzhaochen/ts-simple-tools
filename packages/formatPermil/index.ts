@@ -6,7 +6,7 @@ NP.enableBoundaryChecking(false)
  *
  * @param money 要格式化的金额 单位:分
  * @param division 除数 默认：100 （分=>元）
- * @returns 格式化后的金额 string
+ * @returns {string} 格式化后的金额
  */
 const formatPermil: FormatPermil = function (money, division = 100) {
   if (typeof money === 'string') {
